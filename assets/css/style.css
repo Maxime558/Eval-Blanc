@@ -67,10 +67,6 @@ header #logo {
   align-items: flex-start;
   justify-content: center;
 }
-#submenu {
-  text-align: center;
-}
-
 .menu-ul {
   list-style: none;
 }
@@ -94,12 +90,18 @@ header #logo {
   color: var(--gris-footer);
 }
 #submenu {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between; 
 }
 .menu-ul li {
   margin: 0 0.5rem;
   font-weight: 600;
+  margin-right: 5rem;
+}
+#sousmenu1 {
+  margin-right: 0;
 }
 #image-header {
   width: var(--docwidth);
