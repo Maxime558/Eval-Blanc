@@ -1,0 +1,271 @@
+/* 
+██████╗ ███████╗███████╗███████╗████████╗
+██╔══██╗██╔════╝██╔════╝██╔════╝╚══██╔══╝
+██████╔╝█████╗  ███████╗█████╗     ██║   
+██╔══██╗██╔══╝  ╚════██║██╔══╝     ██║   
+██║  ██║███████╗███████║███████╗   ██║   
+╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝   ╚═╝   
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  --docwidth: 90%;
+  /* Variable pour les couleurs : */
+  --jaune-orange: #ea9f06;
+  --gris-footer: #373737;
+  --gris-background: #1c1c1c;
+  --gris-light: #d2d2d2;
+}
+
+img {
+  width: 100%;
+}
+
+/*
+██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗     ███████╗████████╗    ███╗   ██╗ █████╗ ██╗   ██╗
+██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗    ██╔════╝╚══██╔══╝    ████╗  ██║██╔══██╗██║   ██║
+███████║█████╗  ███████║██║  ██║█████╗  ██████╔╝    █████╗     ██║       ██╔██╗ ██║███████║██║   ██║
+██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗    ██╔══╝     ██║       ██║╚██╗██║██╔══██║╚██╗ ██╔╝
+██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║    ███████╗   ██║       ██║ ╚████║██║  ██║ ╚████╔╝ 
+╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝    ╚══════╝   ╚═╝       ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  
+*/
+#header {
+  color: var(--gris-footer);
+}
+header #logo {
+  width: 70%;
+}
+#image-logo {
+  margin: 3rem 0;
+}
+#logo h1 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+#logo span {
+  color: var(--jaune-orange);
+}
+#menu1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#menu2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#submenu {
+  text-align: center;
+}
+
+.menu-ul {
+  list-style: none;
+}
+
+.menu-ul li {
+  display: inline;
+}
+#menu2 {
+  width: var(--docwidth);
+  margin: auto;
+}
+#menu2 h2 {
+  margin-bottom: 1.5rem;
+  color: var(--gris-footer);
+  margin: 1.5rem 0.5rem;
+  font-size: 100;
+}
+#menu2 #submenu {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--gris-footer);
+}
+#submenu {
+  display: flex;
+  justify-content: center;
+}
+.menu-ul li {
+  margin: 0 0.5rem;
+  font-weight: 600;
+}
+#image-header {
+  width: var(--docwidth);
+  margin: auto;
+}
+
+/* 
+███████╗███████╗ ██████╗████████╗██╗ ██████╗ ███╗   ██╗    ██████╗  ██████╗ ██╗  ██╗███████╗
+██╔════╝██╔════╝██╔════╝╚══██╔══╝██║██╔═══██╗████╗  ██║    ██╔══██╗██╔═══██╗╚██╗██╔╝██╔════╝
+███████╗█████╗  ██║        ██║   ██║██║   ██║██╔██╗ ██║    ██████╔╝██║   ██║ ╚███╔╝ █████╗  
+╚════██║██╔══╝  ██║        ██║   ██║██║   ██║██║╚██╗██║    ██╔══██╗██║   ██║ ██╔██╗ ██╔══╝  
+███████║███████╗╚██████╗   ██║   ██║╚██████╔╝██║ ╚████║    ██████╔╝╚██████╔╝██╔╝ ██╗███████╗
+╚══════╝╚══════╝ ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝    ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝
+*/
+#image-boxe {
+  width: var(--docwidth);
+  margin: auto;
+}
+#image-boxe img {
+  height: 22vh;
+}
+.gants {
+  width: var(--docwidth);
+  margin: auto;
+  padding-bottom: 10rem;
+  background-color: var(--gris-light);
+}
+
+.boxe {
+  background-color: var(--gris-background);
+}
+.gantboxe {
+  background-color: var(--gris-light);
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+.gantboxe img {
+  padding-top: 4rem;
+}
+.gantboxe h2 {
+  position: absolute;
+  right: -13%;
+  top: 19%;
+  font-size: 1.5rem;
+  color: var(--jaune-orange);
+  background-color: var(--gris-footer);
+  padding: 0.5rem;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+}
+.gantboxe .btn {
+  display: flex;
+  justify-content: space-between;
+}
+.gantboxe .description {
+  background-color: white;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.6rem 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.gantboxe .btn {
+  margin-top: 1rem;
+}
+.gantboxe .boutton {
+  background-color: var(--gris-background);
+  color: white;
+  padding: 7px 22px;
+}
+.gantboxe .prix-barré {
+  font-size: 1.6rem;
+  margin-top: 5px;
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(88, 88, 88);
+}
+.gantboxe .prix {
+  margin-top: 5px;
+  font-size: 1.6rem;
+  color: var(--jaune-orange);
+}
+/* 
+███████╗ ██████╗  ██████╗ ████████╗███████╗██████╗     
+██╔════╝██╔═══██╗██╔═══██╗╚══██╔══╝██╔════╝██╔══██╗    
+█████╗  ██║   ██║██║   ██║   ██║   █████╗  ██████╔╝    
+██╔══╝  ██║   ██║██║   ██║   ██║   ██╔══╝  ██╔══██╗    
+██║     ╚██████╔╝╚██████╔╝   ██║   ███████╗██║  ██║    
+╚═╝      ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝    
+                                                       
+*/
+footer {
+  background-color: var(--gris-footer);
+  position: relative;
+  height: 73vh;
+}
+.menu-footer {
+  width: 80%;
+  margin: auto;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  top: -5%;
+  right: 10%;
+  list-style-type: none;
+}
+.menu-footer span {
+  color: black;
+}
+.menu-footer li {
+  color: grey;
+}
+.menu-footer li::before {
+  content: "•"; 
+  font-size: 3.5rem;
+  margin-right: 0.5rem;
+  margin-top: 1.5rem;
+  vertical-align: middle;
+}
+.menu-footer p{
+  margin-bottom: 4px;
+}
+#div-image-footer {
+  padding-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.image-footer {
+  width: 45%;
+  color: white;
+  text-align: center;
+  padding-bottom: 3.5rem;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+.image-footer img {
+  border-radius: 50%;
+  width: 25%;
+  padding-bottom: 1rem;
+}
+#hr1 {
+  border: 2px solid rgb(122, 122, 122);
+  width: var(--docwidth);
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.icon {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#droit{
+  text-align: center;
+  padding-top: 2rem;
+  color: white;
+}
